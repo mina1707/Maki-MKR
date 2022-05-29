@@ -1,0 +1,62 @@
+.eachRoll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+    
+}
+
+.body {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container {
+    border-radius: 1%;
+    border-style: ridge;
+    
+}
+
+.alignment {
+    text-align: right;
+}
+.textAlignment {
+    text-align: left;
+}
+.textmodifytwo {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.buttonmodify {
+    margin-top: 12px;
+    margin-left: 5px;
+    
+}
+.alignment {
+    display: flex;
+    justify-content: end;
+    
+}
+.tittlemodif {
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.makimodif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+  
+}
+
+.makitittle {
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+

@@ -1,0 +1,22 @@
+.nav {
+    background-color: black;
+    height: 10%;
+    display:flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+  
+    
+}
+
+.modif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+  
+}
+
+.textmodify {
+    color:white;
+}
