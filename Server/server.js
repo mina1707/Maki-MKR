@@ -14,6 +14,8 @@ require("./config/mongoose.config")(DB);
 // connect the routes
 require("./routes/Ingredients.routes")(app)
 
+require("./routes/Payment_User.routes")(app)
+
 
 // start the server
 app.listen(PORT, () => console.log(`✨✨✨✨✨✨✨✨✨ server up on port: ${PORT} ✨✨✨✨✨✨✨✨✨✨✨`))

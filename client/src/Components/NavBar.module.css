@@ -1,13 +1,4 @@
-.nav {
-    background-color: black;
-    height: 10%;
-    display:flex;
-    justify-content: space-around;
-    color: white;
-    align-items: center;
-  
-    
-}
+
 
 .modif {
     display: flex;

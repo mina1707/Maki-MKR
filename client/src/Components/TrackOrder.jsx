@@ -5,43 +5,38 @@ import styles from "./TrackOrder.module.css"
 
 
 
-const TrackOrder = (props) => {
+export default function TrackOrder() {
 
+  const {isLoaded} = useLoadScript({
+    googleMapsApiKey:"AIzaSyA3-Yin62_vTccxBtVqCgULihe1_ESu8_k"
+  });
 
-  const { isLoaded } = useLoadScript({ googlemapsApiKey: "AIzaSyA3-Yin62_vTccxBtVqCgULihe1_ESu8_k" })
-  return (
-    <div>
-      <NavBar />
-      <h2 className={styles.textAlignm}>Order Success!!</h2>
+  if(!isLoaded) return <div>loading...</div>;
+  return ( 
+  <>
+  <NavBar/>
 
-      <div className={styles.mapDiv}>
-      <Map isLoaded={isLoaded}  />
-
-      </div>
-
-    </div>
-
+  <h1>Order Success!</h1>
+  <h3>Your order is in your way.</h3>
+  <div className= {styles.alignmap}>
+  <Map/>
+  </div>
+  
+  </>
+  
   )
+
 }
 
-export default TrackOrder
+function Map() {
+  return(
+    <GoogleMap zoom={10} center={{lat : 47, lng: -122 }}
+    mapContainerClassName={styles.mapContainer}
+    >
+    <Marker position= {{lat : 47, lng: -122 }}/>
+    <Marker position= {{lat : 46, lng: -124 }}/>
+    <Marker position= {{lat : 45, lng: -123 }}/>
 
-
-function Map({ isLoaded }) {
-  const [map, setMap] = React.useState(null)
-  const center = {
-    lat: -3.745,
-    lng: -38.523
-  };
-
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  return (
-    isLoaded ? <GoogleMap zoom={10} center={{ lat: 44, lng: -80 }} onLoad={onLoad} mapContainerClassName={styles.mapContainer}></GoogleMap> : <></>
-  )
+    </GoogleMap>
+  );
 }
-

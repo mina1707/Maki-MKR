@@ -9,6 +9,10 @@ const IngredientSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: [true, "price must be present"],
+    },
+    imgURL: {
+        type: String,
+        required: [true,"image is required"]
     }
 
     

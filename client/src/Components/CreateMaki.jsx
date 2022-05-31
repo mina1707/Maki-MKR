@@ -77,13 +77,16 @@ const CreateMaki = (props) => {
             <NavBar makiCount={makis.length} />
             <div className= {MainStyles.makimodif}>
             <img width="60px" height="60px" src ="146833-200.png" alt="makipic"/>
-            <h1  className={MainStyles.makitittle}>Maki MKR </h1>
+            <h1 style={{color:"orange", textShadow: "2px 2px #fa8900"}} className={MainStyles.makitittle}>Create your rolls </h1>
+            <img width="60px" height="60px" src ="146833-200.png" alt="makipic"/>
             </div>
 
             <div className={MainStyles.wrapper}>
                 <div className={MainStyles.columnLeft}>
                     <h3>Ingredient picker</h3>
                     <div className={MainStyles.columnLeftDetail}>
+
+
                         <select onChange={(e) => setSelectedIngredientIdx(e.target.value)}>
                             <option value="">Select your ingredients</option>
                             {

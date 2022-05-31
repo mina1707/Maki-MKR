@@ -14,22 +14,18 @@ const NavBar = (props) => {
 
   return (
     <Navbar variant="dark" bg="dark">
-    <Container >
-    <div className={NavBarStyles.modif} >
-       <Link to ='/login'>
-           <Button variant='warning'>Login</Button>
-       </Link>
-       <Link to ='/register'>
-           <Button variant='warning'>Register</Button>
-       </Link>
-       </div>
+      <Container >
+        <div className={NavBarStyles.modif} >
+        <img width="60px" height="60px" src ="makithree.webp" alt="makipic"/>
+          <h1 style={{color:"white"}}>Maki MKR</h1>
+        </div>
 
         <div>
-       <p className={NavBarStyles.textmodify}><FaShoppingCart /> {props.makiCount} makis</p>
-       </div>
-    </Container>
+          <p className={NavBarStyles.textmodify}><FaShoppingCart /> {props.makiCount} makis</p>
+        </div>
+      </Container>
     </Navbar>
-   
+
   )
 }
 

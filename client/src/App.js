@@ -4,7 +4,6 @@ import CreateMaki from './Components/CreateMaki';
 import Cart from './Components/Cart';
 import CheckOut from './Components/CheckOut';
 import TrackOrder from './Components/TrackOrder';
-import LoginAndReg from './Components/LoginAndReg';
 
 function App() {
 
@@ -22,7 +21,7 @@ function App() {
       <Route path='/makis/cart' element={<Cart/>}  />
 
 
-       {/* Check Out */}
+       {/* Check Out And Creation */}
 
       <Route path='/checkout' element={<CheckOut/>}  />
 
@@ -31,10 +30,10 @@ function App() {
 
        <Route path='/track-order' element ={< TrackOrder/>} />
 
+       {/* Track Order */}
 
-       {/* Login and Registration */}
 
-       <Route path ='/login-reg' element={<LoginAndReg/>} />
+       
 
 
 
